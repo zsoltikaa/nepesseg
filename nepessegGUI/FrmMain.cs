@@ -5,7 +5,7 @@ namespace nepessegGUI
     public partial class FrmMain : Form
     {
 
-        const string path = "H:\\c#\\forms apps\\nepesseg\\nepessegCLI\\src\\";
+        const string path = "H:\\c#\\forms apps\\nepesseg\\nepessegCLI\\src\\ujadat.txt";
 
         public FrmMain()
         {
