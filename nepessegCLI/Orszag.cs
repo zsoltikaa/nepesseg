@@ -10,7 +10,7 @@ class Orszag
 
     public int Nepsuruseg => (int)Math.Round(Nepesseg / (float)Terulet);
 
-    public bool Koncentralt => FovarosNepesseg > Nepesseg * 3;
+    public bool Koncentralt => FovarosNepesseg > Nepesseg * .3;
 
     public Orszag(string orszagnev, int terulet, int nepesseg, string fovaros, int fovarosNepesseg)
     {

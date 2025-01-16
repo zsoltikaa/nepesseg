@@ -1,17 +1,17 @@
 ﻿using System.Text;
 
-const string path = "H:\\c#\\forms apps\\nepesseg\\nepessegCLI\\src\\adatok-utf8.txt";
+const string path = "C:\\Users\\zsolt\\source\\repos\\nepesseg\\src\\adatok-utf8.txt";
 
 List<Orszag> orszagok = [];
 
-using (StreamReader reader = new StreamReader(path, Encoding.UTF8))
+using (StreamReader sr = new(path, Encoding.UTF8))
 {
 
-    _ = reader.ReadLine();
+    _ = sr.ReadLine();
 
-    while (!reader.EndOfStream)
+    while (!sr.EndOfStream)
     {
-        var s = reader.ReadLine().Split(';');
+        var s = sr.ReadLine().Split(';');
         orszagok.Add(new(
             orszagnev: s[0],
             terulet: int.Parse(s[1]),
